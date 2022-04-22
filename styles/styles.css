@@ -151,6 +151,10 @@ img {
 .hero {
   background-color: var(--section-background-color);
   padding: 200px 0;
+  background-image: url(../images/hero-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .section {
   padding-top: 94px;
