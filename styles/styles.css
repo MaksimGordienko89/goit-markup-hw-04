@@ -69,6 +69,10 @@ img {
 .naiv-nav {
   display: flex;
 }
+
+.mail-icon:hover {
+  color: var(--accent-color);
+}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -148,6 +152,19 @@ img {
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
+.mail::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  display: inline-block;
+  background-image: url(../images/icons/envelope.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  fill: currentColor;
+}
 .hero {
   background-color: var(--section-background-color);
   padding: 200px 0;
@@ -156,6 +173,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1600px;
+  margin: 0 auto;
 }
 .section {
   padding-top: 94px;
