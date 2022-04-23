@@ -52,6 +52,28 @@ img {
 .list:not(:last-child) {
   margin-right: 30px;
 }
+.list::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--btn-filter-background-color);
+  margin-bottom: 30px;
+}
+.icon-antenne::before {
+  background-image: url(../images/icons/antenna.png);
+}
+.icon-clock::before {
+  background-image: url(../images/icons/clock.png);
+}
+.icon-diagramm::before {
+  background-image: url(../images/icons/diagram.png);
+}
+.icon-cosmonavt::before {
+  background-image: url(../images/icons/astronaut.png);
+}
 .nav {
   display: flex;
   list-style: none;
@@ -151,24 +173,28 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  display: flex;
 }
-.mail::before {
-  content: "";
-  width: 16px;
-  height: 12px;
+.icon-tel {
+  display: flex;
   margin-right: 10px;
-  display: inline-block;
-  background-image: url(../images/icons/envelope.png);
-  background-repeat: no-repeat;
-  background-size: cover;
   align-items: center;
   justify-content: center;
   fill: currentColor;
+  background-size: cover;
+}
+.icon-mail {
+  display: flex;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+  fill: currentColor;
+  background-size: cover;
 }
 .hero {
-  background-color: var(--section-background-color);
   padding: 200px 0;
   background-image: url(../images/hero-bg.png);
+  background-color: var(--section-background-color);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
