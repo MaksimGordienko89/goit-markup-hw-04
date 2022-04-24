@@ -400,6 +400,49 @@ img {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
+.follow {
+  margin-left: 70px;
+}
+.follow-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.follow-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  fill: var(--main-lite-color);
+}
+.follow-soc-list {
+  list-style: none;
+  display: flex;
+}
+.follow-soc-item + .follow-soc-item {
+  margin-left: 10px;
+}
+.follow-soc-link:hover {
+  background-color: var(--accent-color);
+  fill: var(--main-lite-color);
+}
+.follow-soc-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--main-lite-color);
+}
+.conteiner-wrap {
+  display: flex;
+  align-items: baseline;
+}
 footer {
   background-color: #2f303a;
   padding-top: 60px;
@@ -430,6 +473,8 @@ footer {
   display: block;
   list-style: none;
   margin-top: 9px;
+  max-width: 231px;
+  margin-right: 0;
 }
 .footer-adress {
   margin-top: 0;
