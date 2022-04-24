@@ -15,6 +15,7 @@ html {
   --section-background-color: #2f303a;
   --btn-filter-background-color: #f5f4fa;
   --btn-hover-color: #188ce8;
+  --icon-color: #afb1b8;
 }
 p,
 h1,
@@ -314,7 +315,8 @@ img {
   width: calc(100%);
 }
 .title,
-.title-our-team {
+.title-our-team,
+.title-clients {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -335,11 +337,50 @@ img {
 .profesion {
   font-weight: 400;
   color: var(--text-color);
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
 .about {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.personal-soc-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.personal-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--icon-color);
+}
+.personal-soc-item + .personal-soc-item {
+  margin-left: 10px;
+}
+.personal-soc-link:hover {
+  background-color: var(--accent-color);
+  fill: var(--main-lite-color);
+}
+.list-clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.item-clients {
+  width: 170px;
+  height: 92px;
+  display: block;
+  border: 1px solid var(--icon-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.item-clients + .item-clients {
+  margin-left: 30px;
 }
 footer {
   background-color: #2f303a;
