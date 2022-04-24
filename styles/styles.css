@@ -365,22 +365,40 @@ img {
   background-color: var(--accent-color);
   fill: var(--main-lite-color);
 }
+.personal-soc-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--main-lite-color);
+}
 .list-clients {
+  list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 50px;
 }
-.item-clients {
+.link-clients {
   width: 170px;
   height: 92px;
-  display: block;
+  display: flex;
   border: 1px solid var(--icon-color);
-  box-sizing: border-box;
   border-radius: 4px;
+  align-items: center;
+  justify-content: center;
 }
 .item-clients + .item-clients {
   margin-left: 30px;
+}
+.link-clients {
+  display: flex;
+  fill: var(--icon-color);
+}
+.item-clients:hover .link-clients {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+.item-clients:focus .link-clients {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 footer {
   background-color: #2f303a;
